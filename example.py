@@ -16,7 +16,7 @@ print("SPR representation of text:", spr)
 
 # Example usage with documents
 
-loader = PyPDFLoader("/home/hammad/Desktop/LLM_Supremacy/Learning/simulacra.pdf")
+loader = PyPDFLoader("<PATH>")
 pages = loader.load_and_split()
 
 sprs = text_transformer.from_documents(pages)
