@@ -39,9 +39,9 @@ class SPRTextTransformer():
         #    print(type(doc))
            try:
                messages = self.get_prompt_messages(doc)
-               print(messages)
+            #    print(messages)
                response = self.llm.invoke(messages)
-               print(response)
+            #    print(response)
                responses.append(Document(page_content=response.content))
            except Exception as e:
                print(f"Error processing document: {e}")

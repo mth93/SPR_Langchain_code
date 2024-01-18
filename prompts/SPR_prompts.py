@@ -96,10 +96,10 @@ EXAMPLE_SRP_OUTPUT_PHOTOSYNTHESIS = '''
 spr_compression_chat_template = ChatPromptTemplate.from_messages(
     [
         ("system", SPR_COMPRESSOR_SYSTEM_PROMPT),
-        ("human", EXAMPLE_SPR_INPUT_PHOTOSYNTHESIS),
-        ("ai", EXAMPLE_SRP_OUTPUT_PHOTOSYNTHESIS),
-        ("human", EXAMPLE_SPR_INPUT_GENERAL_RELATIVITY),
-        ("ai", EXAMPLE_SPR_OUTPUT_GENERAL_RELATIVITY),
+        # ("human", EXAMPLE_SPR_INPUT_PHOTOSYNTHESIS),
+        # ("ai", EXAMPLE_SRP_OUTPUT_PHOTOSYNTHESIS),
+        # ("human", EXAMPLE_SPR_INPUT_GENERAL_RELATIVITY),
+        # ("ai", EXAMPLE_SPR_OUTPUT_GENERAL_RELATIVITY),
         ("human", "{user_input}"),
     ]
 )

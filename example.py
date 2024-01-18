@@ -4,7 +4,7 @@ from langchain_community.document_loaders import PyPDFLoader
 
 
 # Instantiate a language model (replace with your actual LM setup)
-llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key="AIzaSyCQ1z-oU-W1yjJzZeRg0j9dtrwMgx1p1JI", language="en", convert_system_message_to_human=True)
+llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key="", language="en", convert_system_message_to_human=True)
 
 # Create an SPR transformer for text
 text_transformer = spr_document_transformer.SPRTextTransformer("text", llm)
